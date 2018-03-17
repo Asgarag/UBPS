@@ -1,0 +1,67 @@
+@import "../variables";
+
+.biometrics {
+	padding-top: 6rem;
+	padding-bottom: 15rem;
+}
+
+.biometrics__title {
+	margin-bottom: 3rem;
+}
+
+.biometrics__description {
+	margin-bottom: 8rem;
+}
+
+.biometrics__methods {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.biometrics__method {
+	text-align: center;
+}
+
+.biometrics__method-icon {
+	width: 80px;
+	height: 100px;
+	fill: $green;
+	margin-bottom: .5rem;
+}
+
+.biometrics__method-name {
+	text-transform: uppercase;
+	font-size: 1.8rem;
+	display: block;
+}
+
+@media (max-width: 767px) {
+
+	.biometrics__method {
+		width: 30%;
+
+		&:not(:nth-child(3)) {
+			margin-right: 5%;
+		}
+
+		&:nth-child(n+4) {
+			margin-top: 3rem;
+		}
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+}
+
+@media (min-width: 768px) {
+
+	.biometrics__method {
+		width: 18%;
+
+		&:not(:last-child) {
+		margin-right: 2.5%;
+		}
+	}
+}

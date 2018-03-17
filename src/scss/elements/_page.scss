@@ -1,0 +1,68 @@
+@import "../variables";
+
+.page {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+.page__scroll {
+	position: fixed;
+	display: none;
+	border: 3px solid $white;
+	border-radius: 50%;
+	background-color: $green;
+	animation: appearance .4s;
+	z-index: 998;
+	color: $white;
+
+	&--active {
+		display: flex;
+	}
+
+	&:hover, &:focus {
+		background-color: $white;
+		color: $green;
+		border-color: $green;
+	}
+}
+
+.page__scroll-hint {
+	position: absolute;
+	left: -9999px;
+}
+
+.page__scroll-icon {
+	fill: currentColor;
+	margin: auto;
+}
+
+@media (max-width: 767px) {
+
+	.page__scroll {
+		width: 40px;
+		height: 40px;
+		bottom: 10px;
+		right: 10px;
+	}
+
+	.page__scroll-icon {
+		width: 20px;
+		height: 20px;
+	}
+}
+
+@media (min-width: 768px) {
+
+	.page__scroll {
+		width: 60px;
+		height: 60px;
+		bottom: 30px;
+		right: 30px;
+	}
+
+	.page__scroll-icon {
+		width: 30px;
+		height: 30px;
+	}
+}

@@ -1,0 +1,33 @@
+@import "../variables";
+
+.social {
+	display: flex;
+	justify-content: center;
+}
+
+.social__link {
+	color: #c5c5c5;
+
+	&:hover, &:focus {
+		color: $green;
+	}
+
+	&:focus {
+		outline: none;
+	}
+
+	&:not(:last-child) {
+		margin-right: 1rem;
+	}
+}
+
+.social__icon {
+	width: 21px;
+	height: 21px;
+	fill: currentColor;
+}
+
+.social__name {
+	position: absolute;
+	left: -9999px;
+}

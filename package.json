@@ -1,0 +1,39 @@
+{
+  "name": "ubpsnew",
+  "version": "1.0.0",
+  "description": "Project upbs",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/Asgarag/ubpsnew.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/Asgarag/ubpsnew/issues"
+  },
+  "homepage": "https://gitlab.com/Asgarag/ubpsnew#README",
+  "devDependencies": {
+    "autoprefixer": "^7.2.5",
+    "browser-sync": "^2.23.6",
+    "cssnano": "^3.10.0",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-cheerio": "^0.6.3",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-postcss": "^7.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-replace": "^0.6.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-svgmin": "^1.2.4",
+    "gulp-svgstore": "^6.1.1",
+    "gulp-uglify": "^3.0.0",
+    "imagemin-pngquant": "^5.0.1",
+    "run-sequence": "^2.2.1"
+  }
+}

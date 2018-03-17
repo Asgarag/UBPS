@@ -1,0 +1,46 @@
+@import "../variables";
+
+.preview {
+	box-sizing: border-box;
+	min-height: 100vh;
+	padding-top: 90px;
+	padding-bottom: 5rem;
+	background: linear-gradient(to right, rgba(156, 191, 176, 0.64) 0%, rgba(69, 69, 69, 0.64) 45%, rgba(126, 162, 100, 0.64) 100%),  linear-gradient(to bottom, rgba($black, .5) 0%, rgba($black, .8) 100%), url("../images/city.jpg") no-repeat, $black;
+	background-size: 100% 100%;
+	display: flex;
+}
+
+.preview__inner {
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+}
+
+.preview__header-wrapper {
+	min-height: 80px;
+	position: relative;
+}
+
+.preview__container {
+	max-width: 730px;
+	text-align: center;
+	color: $white;
+	margin: auto;
+	padding-top: 3rem;
+}
+
+.preview__title {
+	margin-bottom: 3rem;
+	font-weight: 400;
+}
+
+.preview__description {
+	font-size: 1.8rem;
+	font-weight: 300;
+	margin-bottom: 8rem;
+}
+
+.preview__button {
+	display: inline-block;
+	font-size: 2.4rem;
+}

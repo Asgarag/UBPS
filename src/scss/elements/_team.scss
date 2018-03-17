@@ -1,0 +1,107 @@
+@import "../variables";
+
+.team {
+	padding-top: 7rem;
+	padding-bottom: 5rem;
+	background-color: $gray;
+}
+
+.team__title {
+	margin-bottom: 7rem;
+}
+
+.team__members {
+	margin-bottom: 6rem;
+}
+
+.team__member-avatarbox {
+	max-width: 250px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 1rem;
+	position: relative;
+
+	&::before {
+		content: "";
+		display: block;
+		padding-left: 100%;
+		padding-top: 100%;
+		background-color: $green;
+	}
+}
+
+.team__member-avatar {
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+
+.team__member-name {
+	display: block;
+	text-transform: uppercase;
+	font-size: 1.8rem;
+	margin-bottom: .5rem;
+	color: $light-black;
+	text-align: center;
+}
+
+.team__member-post {
+	display: block;
+	font-size: 1.4rem;
+	margin-bottom: 1.5rem;
+	text-align: center;
+}
+
+.team__plus {
+	font-weight: 300;
+	font-size: 3rem;
+	text-transform: uppercase;
+	display: block;
+	text-align: center;
+}
+
+@media (max-width: 600px) {
+
+	.team__member:not(:first-child) {
+		margin-top: 5rem;
+	}
+}
+
+@media (min-width: 601px) {
+
+	.team__members {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+}
+
+@media (min-width: 601px) and (max-width: 1023px) {
+
+	.team__member {
+		width: 48%;
+
+		&:not(:nth-child(2n)) {
+			margin-right: 4%;
+		}
+
+		&:nth-child(n+3) {
+			margin-top: 5rem;
+		}
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+}
+
+@media (min-width: 1024px) {
+
+	.team__member {
+		width: 22%;
+
+		&:not(:last-child) {
+			margin-right: 4%;
+		}
+	}
+}
